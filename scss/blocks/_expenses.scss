@@ -1,0 +1,122 @@
+@use "../mixins" as m;
+.hero__expenses-wrapper {
+  width: 100%; 
+}
+.hero__expenses-info-wrapper {
+  @include m.layout(space-between,flex-start);
+  gap: 30px;
+  width: 100%;
+  padding: 30px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+.expenses-form {
+  @include m.layout();
+  flex-direction: column;
+  gap: 20px;
+  max-width: 350px;
+  width: 100%;
+  padding: 40px;
+  border: 2px solid var(--main-black-color);
+  border-radius: 10px;
+}
+.expenses-form-title {
+  margin: 0;
+  text-align: center;
+  color: var(--main-btn-bg-color)
+}
+.expenses-form-input-box {
+  @include m.layout();
+  flex-direction: column;
+  gap: 7px;
+}
+.expenses-form-input-box:nth-of-type(5) {
+  margin-bottom: 20px;
+}
+.expenses-form-input-text {
+  font-size: 17px;
+  font-weight: var(--extrabold-font-weight);
+  letter-spacing: 1px;
+  line-height: 18px;
+  color: var(--main-btn-bg-color);
+}
+.expenses-input {
+  padding: 10px;
+  color: var(--main-btn-bg-color);
+  border: 1.6px solid var(--main-input-bg-color);
+  border-radius: 7px;
+  background-color: var(--main-input-bg-color);
+}
+.expenses-input::placeholder {
+  font-size: 16px;
+  color: var(--main-input-bg-color);
+}
+.expenses-form-select {
+  appearance: none;
+}
+.expenses-form-btn {
+  padding: 10px;
+  font-size: 18px;
+  font-weight: var(--extrabold-font-weight);
+  color: var(--main-white-color);
+  border: 2px solid var(--main-btn-bg-color);
+  border-radius: 7px;
+  background-color: var(--main-btn-bg-color);
+  cursor: pointer;
+}
+.expenses-form-btn:hover::after {
+  content: "  +";
+}
+// expenses list 
+.expenses-list {
+  width: 100%;
+  @include m.list-unstyled();
+}
+.expenses__item {
+  @include m.layout(space-between,center);
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 2px solid var(--main-black-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 12px -2px rgba(0, 0, 0, 0.7);
+}
+.expenses__item-info-box {
+  @include m.layout();
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+.expenses__title {
+  margin: 0;
+  font-size: 22px;
+  text-align: center;
+}
+.expenses-text {
+  margin: 0;
+  font-size: 17px;
+  font-weight: var(--extrabold-font-weight);
+  color: var(--main-btn-bg-color);
+}
+.expenses__text {
+  font-size: 16px;
+  font-weight: var(--medium-font-weight);
+}
+.expenses__delete-btn {
+  max-width: 100px;
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: var(--medium-font-weight);
+  color: var(--main-white-color);
+  border: 1px solid black;
+  border-radius: 7px;
+  background-color: var(--main-btn-bg-color);
+  cursor: pointer;
+}
+.expenses__delete-btn:hover {
+  text-align: start;
+  background-image: url("/images/png/delete.webp");
+  background-repeat: no-repeat;
+  background-position: 70px center;
+  background-size: 20px;
+}

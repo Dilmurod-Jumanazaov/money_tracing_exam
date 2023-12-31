@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Expenses</title>
+</head>
+<body>
+  <!-- site header started -->
+  <header class="site-header"></header>
+  <!-- site header end -->
+  <!-- site main started -->
+  <main class="site-main">
+    <!-- hero section started -->
+    <section class="hero__expenses">
+      <div class="container">
+        <h2 class="hero__title">
+          We track your money with us
+        </h2>
+        <div class="hero__expenses-wrapper">
+          <div class="hero__wrapper">
+            <div class="hero__page-box">
+              <h2 class="hero__page-title">
+                Money tracking menu
+              </h2>
+              <ul class="hero__page-list">
+                <li class="hero__page-item">
+                  <a class="hero__page-link page-name" href="index.html">
+                    Home
+                  </a>
+                </li>
+                <li class="hero__page-item">
+                  <a class="hero__page-link page-name" href="history.html">
+                    History
+                  </a>
+                </li>
+                <li class="hero__page-item">
+                  <a class="hero__page-link page-name" href="incomes.html">
+                    Incomes
+                  </a>
+                </li>
+                <li class="hero__page-item">
+                  <a class="hero__page-link page-name" href="expanses.html">
+                    Expanses
+                  </a>
+                </li>
+              </ul>
+              <button class="hero__menu-btn js-menu-btn" type="button">Logout</button>
+            </div>
+            <div class="hero__expenses-info-wrapper">
+              <form class="hero__expenses-form js-expenses-form expenses-form">
+                <h2 class="expenses-form-title">
+                  Add expenses
+                </h2>
+                <div class="expenses-form-input-box">
+                  <span class="expenses-form-input-text">
+                    Title:
+                  </span>
+                  <input class="expenses-form-title-input js-expenses-title-input expenses-input" type="text" name="title" aria-label="Enter your title" placeholder="Enter a title" required>
+                </div>
+                <div class="expenses-form-input-box">
+                  <span class="expenses-form-input-text">
+                    Amount:
+                  </span>
+                  <input class="expenses-form-amount-input js-expenses-amount-input expenses-input" type="number" name="amount" aria-label="Enter the amount of money" placeholder="Amount of money" required>
+                </div>
+                <div class="expenses-form-input-box">
+                  <span class="expenses-form-input-text">
+                    Type:
+                  </span>
+                  <select class="expenses-form-select js-expenses-form-select expenses-input" name="category">
+                    <option value="Salary">Salary</option>
+                    <option value="Food">Food</option>
+                    <option value="Clothes">Clothes</option>
+                    <option value="Car">Car</option>
+                    <option value="Cosmetics">Cosmetics</option>
+                    <option value="Travel">Travel</option>
+                    <option value="For myself">For myself</option>
+                  </select>
+                </div>
+                <div class="expenses-form-input-box">
+                  <span class="expenses-form-input-text">
+                    Description:
+                  </span>
+                  <input class="expenses-form-description-input js-expenses-description-input expenses-input" type="text" name="description" aria-label="Enter your description" placeholder="Enter a description">
+                </div>
+                <div class="expenses-form-input-box">
+                  <span class="expenses-form-input-text">
+                    Date:
+                  </span>
+                  <input class="expenses-form-date-input js-expenses-date-input expenses-input" type="date" name="date" aria-label="Enter the current date" required>
+                </div>
+                <button class="expenses-form-btn" type="submit">Add expenses</button>
+              </form>
+              <ul class="expenses-list js-expenses-list"></ul>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+  </main>
+  <!-- site main end -->
+  <!-- site footer started -->
+  <footer class="site-footer"></footer>
+  <!-- site footer end -->
+  <script src="./js/expenses.js"></script>
+</body>
+</html>

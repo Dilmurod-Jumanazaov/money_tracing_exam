@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Incomes</title>
+</head>
+<body>
+  <!-- site header started -->
+  <header class="site-header"></header>
+  <!-- site header end -->
+  <!-- site main started -->
+  <main class="site-main">
+    <!-- hero section started -->
+    <section class="hero__income">
+      <div class="container">
+        <h2 class="hero__title">
+          We track your money with us
+        </h2>
+        <div class="hero__wrapper">
+          <div class="hero__page-box">
+            <h2 class="hero__page-title">
+              Money tracking menu
+            </h2>
+            <ul class="hero__page-list">
+              <li class="hero__page-item">
+                <a class="hero__page-link page-name" href="index.html">
+                  Home
+                </a>
+              </li>
+              <li class="hero__page-item">
+                <a class="hero__page-link page-name" href="history.html">
+                  History
+                </a>
+              </li>
+              <li class="hero__page-item">
+                <a class="hero__page-link page-name" href="incomes.html">
+                  Incomes
+                </a>
+              </li>
+              <li class="hero__page-item">
+                <a class="hero__page-link page-name" href="expanses.html">
+                  Expanses
+                </a>
+              </li>
+            </ul>
+            <button class="hero__menu-btn js-menu-btn" type="button">Logout</button>
+          </div>
+          <div class="hero__income-info-box">
+            <form class="hero__income-form js-income-form income-form">
+              <h2 class="income-form-title">
+                Add Income
+              </h2>
+              <div class="income-form-input-box">
+                <span class="income-form-input-text">
+                  Title:
+                </span>
+                <input class="income-form-title-input js-income-title-input income-input" type="text" name="title" aria-label="Enter your title" placeholder="Enter a title">
+              </div>
+              <div class="income-form-input-box">
+                <span class="income-form-input-text">
+                  Amount:
+                </span>
+                <input class="income-form-amount-input js-income-amount-input income-input" type="number" name="amount" aria-label="Enter the amount of money" placeholder="Amount of money">
+              </div>
+              <div class="income-form-input-box">
+                <span class="income-form-input-text">
+                  Type:
+                </span>
+                <select class="income-form-select js-income-form-select income-input" name="category">
+                  <option value="Salary">Salary</option>
+                  <option value="Food">Food</option>
+                  <option value="Clothes">Clothes</option>
+                  <option value="Car">Car</option>
+                  <option value="Cosmetics">Cosmetics</option>
+                  <option value="Travel">Travel</option>
+                  <option value="For myself">For myself</option>
+                </select>
+              </div>
+              <div class="income-form-input-box">
+                <span class="income-form-input-text">
+                  Description:
+                </span>
+                <input class="income-form-description-input js-income-description-input income-input" type="text" name="description" aria-label="Enter your description" placeholder="Enter a description">
+              </div>
+              <div class="income-form-input-box">
+                <span class="income-form-input-text">
+                  Date:
+                </span>
+                <input class="income-form-date-input js-income-date-input income-input" type="date" name="date" aria-label="Enter the current date">
+              </div>
+              <button class="income-form-btn" type="submit">Add income</button>
+            </form>
+            <ul class="income__list js-income-list"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+  </main>
+  <!-- site main end -->
+  <!-- site footer started -->
+  <footer class="site-footer"></footer>
+  <!-- site footer end -->
+  <script src="./js/incomes.js"></script>
+</body>
+</html>

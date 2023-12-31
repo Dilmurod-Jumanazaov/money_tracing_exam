@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Money tracing</title>
+</head>
+<body>
+  <!-- site header started -->
+  <header class="site-header"></header>
+  <!-- site header end -->
+  <!-- site main started -->
+  <main class="site-main">
+    <!-- hero section started -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero">
+          <h1 class="hero__title">
+            We track your money with us
+          </h1>
+          <div class="hero__wrapper">
+            <div class="hero__page-box">
+              <h2 class="hero__page-title">
+                Money tracking menu
+              </h2>
+              <ul class="hero__page-list js-page-list">
+                <li class="hero__page-item">
+                  <a class="hero__page-link js-page-link page-name" href="index.html">
+                    Home
+                  </a>
+                </li>
+                <li class="hero__page-item">
+                  <a class="hero__page-link js-page-link page-name" href="history.html">
+                    History
+                  </a>
+                </li>
+                <li class="hero__page-item">
+                  <a class="hero__page-link js-page-link page-name" href="incomes.html">
+                    Incomes
+                  </a>
+                </li>
+                <li class="hero__page-item">
+                  <a class="hero__page-link js-page-link page-name" href="expanses.html">
+                    Expanses
+                  </a>
+                </li>
+              </ul>
+              <button class="hero__menu-btn js-menu-btn" type="button">Logout</button>
+            </div>
+            <div class="hero__info-box">
+              <ul class="hero__total-list js-total-money-list">
+                <li class="hero__total-item">
+                  <p class="hero__total-item-title">
+                    Incomes
+                  </p>
+                  <span class="hero__total js-hero-total-incomes"></span>
+                </li>
+                <li class="hero__total-item">
+                  <p class="hero__total-item-title">
+                    Expenses
+                  </p>
+                  <span class="hero__total js-hero-total-expenses"></span>
+                </li>
+                <li class="hero__total-item">
+                  <p class="hero__total-item-title">
+                    Total balance
+                  </p>
+                  <span class="hero__total js-hero-total-money"></span>
+                </li>
+              </ul>
+              <div class="hero__chart-box">
+                <canvas class="hero__chart js-chart">
+                  Money Chart
+                </canvas>
+              </div>
+              <!-- <ul class="hero__total-expenses-list js-total-expenses-list">
+                <li class="hero__total-expenses-item js-total-expenses-item">
+                  
+                </li>
+              </ul> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+  </main>
+  <!-- site main end -->
+  <!-- site footer started -->
+  <footer class="site-footer"></footer>
+  <!-- site footer end -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

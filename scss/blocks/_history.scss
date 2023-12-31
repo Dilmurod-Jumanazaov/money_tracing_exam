@@ -1,0 +1,67 @@
+@use "../mixins" as m;
+.hero__history-info-wrapper {
+  width: 100%;
+  padding: 30px;
+  border: 3px solid var(--main-black-color);
+  border-radius: 7px;
+}
+.hero__history-title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.hero__history-list {
+  width: 100%;
+  @include m.list-unstyled();
+  overflow-y: scroll;
+}
+.history__item {
+  @include m.layout(space-between,center);
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 2px solid var(--main-black-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 12px -2px rgba(0, 0, 0, 0.7);
+}
+.history__item-info-box {
+  @include m.layout();
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+.history__title {
+  margin: 0;
+  font-size: 22px;
+  text-align: center;
+}
+.history-text {
+  margin: 0;
+  font-size: 17px;
+  font-weight: var(--extrabold-font-weight);
+  color: var(--main-btn-bg-color);
+}
+.history__text {
+  font-size: 16px;
+  font-weight: var(--medium-font-weight);
+}
+.history__delete-btn {
+  max-width: 100px;
+  width: 100%;
+  padding: 10px;
+  font-size: 17px;
+  font-weight: var(--medium-font-weight);
+  color: var(--main-white-color);
+  border: 1px solid black;
+  border-radius: 7px;
+  background-color: var(--main-btn-bg-color);
+  cursor: pointer;
+}
+.history__delete-btn:hover {
+  text-align: start;
+  background-image: url("/images/png/delete.webp");
+  background-repeat: no-repeat;
+  background-position: 70px center;
+  background-size: 20px;
+}
